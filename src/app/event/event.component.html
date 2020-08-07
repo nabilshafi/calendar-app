@@ -1,0 +1,31 @@
+
+<table class="wrap" mdbTable bordered="true">
+
+  <tr *ngFor="let event of time; index as i ">
+    <td  class="time">
+      <table>
+        <tr><td>{{time[i]}}</td></tr>
+        <tr><td class="half">{{halfTime[i]}}</td></tr>
+      </table>
+  </tr>
+
+</table>
+
+<table class="wraper" mdbTable bordered="true">
+  <tbody>
+  <tr>
+  <ng-container *ngFor="let event of events; index as i "  >
+
+      <ng-container *ngFor="let e of event; index as i"  >
+        <div class="single-event" style="float: left; border-left: 5px solid green; position: absolute; " [style.width.px]="500/event.length" [style.left.px]="calculateLeft(i, event)" [style.height.px]="e.duration" [style.margin-top.px]="e.start" >
+          <span>{{e.name}}</span>
+          <span>{{e.location}}</span>
+        </div>
+
+      </ng-container>
+  </ng-container>
+
+  </tr>
+  </tbody>
+
+</table>

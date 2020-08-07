@@ -1,0 +1,52 @@
+.wrap{
+  width: 110px;
+  padding-left: 10px;
+  float: left;
+  height: 720px;
+}
+
+.wraper{
+  width: 510px;
+  padding-right: 10px;
+  background-color: #eeeeee;
+  float: left;
+  height: 720px;
+}
+
+.single-event{
+  background-color: white;
+}
+
+.single-event span{
+  display: block;
+}
+
+.wrap tr{
+  vertical-align: top;
+}
+
+
+.half{
+  color:Gray;
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+.wrapper tr td span{
+display: block;
+  background-color: #ffffff;
+}
+
+.wrap .time{
+  background-color: #ffffff;
+  height: 30px;
+}
+
+.event{
+  border-left: 3px solid green;
+  padding: 5px;
+  display: block;
+}
+
+
+
